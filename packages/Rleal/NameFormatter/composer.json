@@ -1,0 +1,43 @@
+{
+    "name": "rleal/nameformatter",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rogerio R. Leal",
+            "email": "rogerio.leaal@gmail.com",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/rleal/nameformatter",
+    "keywords": ["Laravel", "NameFormatter"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rleal\\NameFormatter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rleal\\NameFormatter\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rleal\\NameFormatter\\NameFormatterServiceProvider"
+            ],
+            "aliases": {
+                "NameFormatter": "Rleal\\NameFormatter\\Facades\\NameFormatter"
+            }
+        }
+    }
+}
